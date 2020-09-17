@@ -1,12 +1,15 @@
  <!DOCTYPE html>
  <html>
      <head>
+        <link              
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet" />
          <title>My Portfolio</title>
-
+         <link rel="stylesheet" href="./styles/main.css" type="text/css">         
          <script src="https://kit.fontawesome.com/e4f51fe795.js" crossorigin="anonymous"></script>
      </head>
     <body id="home">              
         <header class="Header">
+            <h1 class="Header__logo">victoria</h1>
             <nav class="Header__navbar">
                 <div class="Header__navigation">
                     <ul class="Header__navContent">
@@ -26,12 +29,14 @@
                 </div>
             </nav>
             <section class="Header__content">
-                <h1>I'm Victoria</h1>
-                <p>A <span class="Header__highlight"><em>Full Stack Developer</em></span></p>
+                <h1 class="Header__title">I'm Victoria</h1>
+                <p class="Header__subTitle">
+                A <span class="Header__highlight"><em>Full Stack Developer</em></span>
+                </p>
             </section>
         </header>
         <main class="Main">
-            <section class="Main__about" id="about">
+            <section class="About" id="about">
                 <div class="Main__aboutContent">
                     <h4 class="About__title">About</h4>
                     <h2 class="About__subTitle">My name is Victoria Pérez</h2>
@@ -49,15 +54,15 @@
                     </div>
                 </div>
             </section>
-            <section class="Main__work" id="work">
-                <h4 class="work__title">Work</h4>
-                    <h2 class="work__subTitle">Latest Projects</h2>
+            <section class="Work" id="work">
+                <h4 class="Work__title">Work</h4>
+                    <h2 class="Work__subTitle">Latest Projects</h2>
                 <div class="Main__project">
                     <div class="Work__projectImgContainer">
                         <img src="./assets/412-300x300.jpg" alt="random image" class="Work__projectImg">
                     </div>
                     <div class="Main__projectContent">
-                        <h3 class="work__projectTitle"><strong>Project Title</strong></h3>
+                        <h3 class="Work__projectTitle"><strong>Project Title</strong></h3>
                         <p class="ProjectInfo">
                             Incubator sales graphical user interface mass market funding user experience network effects channels.
                         </p>
@@ -68,7 +73,7 @@
                         <img src="./assets/412-300x300.jpg" alt="random image" class="Work__projectImg">
                     </div>
                     <div class="Main__projectContent">
-                        <h3 class="work__projectTitle"><strong>Project Title</strong></h3>
+                        <h3 class="Work__projectTitle"><strong>Project Title</strong></h3>
                         <p class="ProjectInfo">
                             Incubator sales graphical user interface mass market funding user experience network effects channels.
                         </p>
@@ -79,7 +84,7 @@
                         <img src="./assets/412-300x300.jpg" alt="random image" class="Work__projectImg">
                     </div>
                     <div class="Main__projectContent">
-                        <h3 class="work__projectTitle"><strong>Project Title</strong></h3>
+                        <h3 class="Work__projectTitle"><strong>Project Title</strong></h3>
                         <p class="ProjectInfo">
                             Incubator sales graphical user interface mass market funding user experience network effects channels.
                         </p>
@@ -90,7 +95,7 @@
                         <img src="./assets/412-300x300.jpg" alt="random image" class="Work__projectImg">
                     </div>
                     <div class="Main__projectContent">
-                        <h3 class="work__projectTitle"><strong>Project Title</strong></h3>
+                        <h3 class="Work__projectTitle"><strong>Project Title</strong></h3>
                         <p class="ProjectInfo">
                             Incubator sales graphical user interface mass market funding user experience network effects channels.
                         </p>
@@ -101,7 +106,7 @@
                         <img src="./assets/412-300x300.jpg" alt="random image" class="Work__projectImg">
                     </div>
                     <div class="Main__projectContent">
-                        <h3 class="work__projectTitle"><strong>Project Title</strong></h3>
+                        <h3 class="Work__projectTitle"><strong>Project Title</strong></h3>
                         <p class="ProjectInfo">
                             Incubator sales graphical user interface mass market funding user experience network effects channels.
                         </p>
@@ -112,15 +117,15 @@
                         <img src="./assets/412-300x300.jpg" alt="random image" class="Work__projectImg">
                     </div>
                     <div class="Main__projectContent">
-                        <h3 class="work__projectTitle"><strong>Project Title</strong></h3>
+                        <h3 class="Work__projectTitle"><strong>Project Title</strong></h3>
                         <p class="ProjectInfo">
                             Incubator sales graphical user interface mass market funding user experience network effects channels.
                         </p>
                     </div>
                 </div>
             </section>
-            <section class="Main__contact" id="contact">
-                <h4 class="Contact__title"></h4>
+            <section class="Contact" id="contact">
+                <h4 class="Contact__title">Contact</h4>
                 <h2 class="Contact__subTitle">Get In Touch</h2>
                 <div class="Contact__formContainer">
                     <form action="" method="POST" class="Contact__form">
@@ -149,7 +154,7 @@
         </main>
     <footer class="Footer">
         <section class="Footer__content">
-            <p class="Footer__copyright"> &copy; 2020 Developed by Victoria Perez</p>
+            <p class="Footer__copyright"> &copy; 2020 Developed by Victoria Pérez</p>
             <ul class="Footer__socialList">
                 <li class="Footer__socialItem"><a href="http://www.github.com/zegawat" class="Footer__socialLink" target="_blank">
                     <i class="fab fa-github"></i>
