@@ -10,11 +10,21 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     width: 95%;
-    margin: 2.1rem autos;
+    margin: 2.1rem auto;
+}
+
+.Work__projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .Work__project {
     margin-bottom: 2.1rem;
+    flex-basis: 100%;
+    justify-content: space-evenly;
 }
 
 .Work__subTitle,
@@ -29,18 +39,12 @@
 }
 
 .Work__projectImgContainer {
-    width: 342px;
-    height: 342px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .Work__projectImg {
     width: 100%;
-}
-
-.Work__projectContent {
-    width: 95%;
-    margin: 1rem auto;
 }
 
 .Work__projectTitle {
@@ -53,3 +57,11 @@
     font-size: 1.5rem;
     line-height: 1.4;
 }
+
+@media (min-width: 768px) {
+    .Work__project {
+      flex-basis: 49%;
+    }
+  
+  
+  } 

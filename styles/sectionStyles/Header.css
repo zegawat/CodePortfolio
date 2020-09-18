@@ -1,21 +1,18 @@
 .Header {
     height: 100vh;
-    background: linear-gradient(
-        122deg,
-        rgba(24, 33, 65, 0.7) 0%,
-        rgba(24, 33, 65, 0.7) 100%
-        ),
-        url("./assets/1325192.jpg") center center no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        position: relative;        
-        }
+    background: url("../../assets/cafe.jpg") center center no-repeat;  
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr;
+}
 
 .Header__navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    grid-area: 1 / 1 /2 / -1;
+    align-self: start;
 }
 
 .Header__logo{
@@ -24,7 +21,6 @@
     font-style: italic;
     font-size: 3.2rem;
     position: relative;
-    width: 100%;
     text-align: center;
 }
 
@@ -35,7 +31,7 @@
     border-radius: 100%;
     background-color: var(--accentYellow);
     position: absolute;
-    right: 34%;
+    right: -17%;
     bottom: 20%;
 }
 
@@ -95,3 +91,27 @@
 .Header__subtitle {
     color: var(--white);
 }
+
+@media (min-width: 768px) {
+    .Header__navbar {
+      flex-wrap: nowrap;
+      justify-content: space-evenly
+    }
+  
+    .Header__logo::after {
+      bottom: 35%;
+      right: -16%;
+    }
+  
+    .Header__navigation {
+      flex-basis: initial;
+    }
+  
+    .Header__title {
+      font-size: 6rem;
+    }
+  
+    .Header__subTitle {
+      font-size: 3.5rem;
+    }
+  } 

@@ -4,6 +4,11 @@
     flex-direction: column;
 }
 
+.About__content {
+    display: flex;
+    flex-direction: column;
+}
+
 .About__title{
     color: var(--accentYellow);
     text-transform: uppercase;
@@ -13,17 +18,17 @@
 }
 
 .About__imgContainer {
-    width: 95%
-    margin: 2.1rem auto;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .About__img {
     width: 100%;
 }
 
-.About__content {
-    width: 95%
-    margin: 2.1rem auto 2.1rem;
+.About__bioContent {
+    width: 95%;
+    margin: 0 auto;
 }
 
 .About__subTitle {
@@ -38,7 +43,7 @@
     color: var(--textOpacity);
     font-size: 1.5rem;
     line-height: 1.4;
-    padding: 2rem 0;
+    margin-bottom: 2rem 0;
 }
 
 .About__btn {
@@ -58,3 +63,18 @@
     background-color: var(--accentYellow);
     border-color: transparent;
 }
+
+@media (min-width: 768px) {
+    .About__content{
+      flex-direction: row;
+    }
+  
+    .About__imgContainer {
+      width: 45%;
+      align-self: center;
+    }
+  
+    .About__bioContent {
+      width: 45%;
+    }
+  }
