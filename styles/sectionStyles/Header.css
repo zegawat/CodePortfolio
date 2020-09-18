@@ -1,17 +1,27 @@
 .Header {
-    background: var(--bgGradient);
-}
+    height: 100vh;
+    background: linear-gradient(
+        122deg,
+        rgba(24, 33, 65, 0.7) 0%,
+        rgba(24, 33, 65, 0.7) 100%
+        ),
+        url("./assets/1325192.jpg") center center no-repeat;
+        background-size: cover;
+        }
 
 .Header__logo{
-    color: var(--white);
     font-family: "Karla", sans-serif;
     font-weight: 700;
     font-style: italic;
     font-size: 3.2rem;
 }
 
+.Header__navItem {
+    margin: 1rem;
+    list-style: none;
+}
+
 .Header__navLink {
-    color: var(--white);
     font-size: 2rem;
     text-decoration: none;
 }
@@ -26,12 +36,16 @@
     line-height: 1.2;
     letter-spacing: 0.8rem;
     font-weight: 700;
+    padding: 2rem 0;
 }
 
 .Header__subTitle{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
+.Header__title,
+.Header__logo,
+.Header__navLink
 .Header__title,
 .Header__subtitle {
     color: var(--white);

@@ -1,12 +1,19 @@
 .Footer {
     background: var(--greyBg);
+    padding: 2.1rem 0;
 }
 
 .Footer__copyright{
-    color: var(--accentYellow);
+    color: var(--accentBlue);
     font-size: 2rem;
+}
+
+.Footer__socialItem {
+    margin: 1rem;
+    list-style: none;
 }
 
 .Footer__socialLink {
     color: var(--accentBlue);
+    font-size: 2rem;
 }
