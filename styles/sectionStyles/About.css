@@ -14,7 +14,7 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     width: 95%;
-    margin: 2.1rem;
+    margin: 2.1rem auto 1rem;
 }
 
 .About__imgContainer {
@@ -35,7 +35,7 @@
     color: var(--accentBlue);
     font-size: 3.2rem;
     width: 95%;
-    margin: 2.1rem auto;
+    margin: 0 auto 2.1rem auto;
 
 }
 
@@ -43,7 +43,7 @@
     color: var(--textOpacity);
     font-size: 1.5rem;
     line-height: 1.4;
-    margin-bottom: 2rem 0;
+    margin-bottom: 2rem;
 }
 
 .About__btn {
@@ -65,7 +65,7 @@
 }
 
 @media (min-width: 768px) {
-    .About__content{
+    .About__content {
       flex-direction: row;
     }
   
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 1280px) {
-  .About__imgContainer{
+  .About__imgContainer {
     max-width: 600px;
   }
 
