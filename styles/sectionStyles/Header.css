@@ -47,11 +47,15 @@
 .Header__navItem {
     margin: 1rem;
     list-style: none;
+    font-size: 2rem;
+    font-weight: 700;
+    ;
 }
 
 .Header__navLink {
-    font-size: 2rem;
     text-decoration: none;
+    font-size: 2rem;
+    color: var(--accentYellow)
 }
 
 .Header__content {
@@ -84,9 +88,7 @@
     font-size: 2rem;
 }
 
-.Header__title,
 .Header__logo,
-.Header__navLink
 .Header__title,
 .Header__subtitle {
     color: var(--white);
